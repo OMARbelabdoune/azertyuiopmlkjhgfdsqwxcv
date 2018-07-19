@@ -26,79 +26,21 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('╚[════════════]╝')
   console.log('')
   console.log('')
-});client.on('message', message => {
-    if (message.author.bot) return;
-     if (message.content === prefix + "help-en") {
-		 message.channel.send('**The Message Was Sent On Private**');
-            
-	
-		 
-
-
- message.author.sendMessage(`
- **
-
-╔[❖════════════❖]╗
-             Prefix = ' * '
-╚[❖════════════❖]╝
-
-╔[❖════════════❖]╗
-             Admin Commands
-╚[❖════════════❖]╝
-
- ❖ *kick <mention > ➾ kick member from server
-
- ❖ *clear ➾ clear chat ( not ready yet fixing)
- 
- ❖ *mute < mention > ➾ mute member
-
- ❖ *unmute <mention> ➾ unmute member
-
- ❖ *ct <name> ➾ create channel
-
- ❖ *cv <name> create voice channel
-  
- ❖ *bc <message> ➾ message all members in server
-
-
-╔[❖════════════❖]╗
-            General  Commands
-╚[❖════════════❖]╝
-
-❖ *roll <number> ➾ role 
-
-❖ *date ➾ see date
-
-❖ *member ➾ members info
-
-❖ *ser-av ➾ server avatar
-
-❖ *uptime ➾ to see uptime
-
-❖ *invs ➾ server invite link
-
-❖ *own ➾ bot owner
-
-❖ *id ➾ your id
-
-❖ *avatar ➾ your avatar account
-
-❖ *help-en ➾ help by arabic
-
-❖ *help-en ➾ help by english
-
-❖ *ping ➾ to see ping
-
-❖ *bot ➾ bot informations 
-
-❖ *server ➾ server informations 
-
-❖ *invite ➾ bot invite link
-
-
-
-`);
-
+client.on('message', message => {
+            if (message.content.startsWith(prefix + "help")) {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('     **bc1** ' ,' **بث جماعي + للكل + مطور** ')
+.addField('     **bc2**  ' ,' **بث جماعي + للكل + غير مطور** ')
+.addField('     **bc3** ' , '**بث جماعي + للأونلاين + غير مطور + منشن للشخص**') 
+.addField('     **bc4** ' , '**بث جماعي + للكل + غير مطور + منشن للشخص**') 
+.addField('     **ping** ' ,' ** سرعة اتصال البوت**')
+.addField('     **كت تويت** ' , '**هذي لعبة الكت تويت**')
+.addField('     **هل تعلم ** ' ,' **  لعبة هل تعلم  ** ')
+.addField('     **clear ** ' ,' **  لمسح الشات بدون رقم  ** ')
+.addField('     **say ** ' ,' **  عشان يتكلم عنك  ** ')
+.setColor('#7d2dbe')
+  message.channel.sendEmbed(embed);
     }
 });
 
