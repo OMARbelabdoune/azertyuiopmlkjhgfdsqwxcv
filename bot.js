@@ -40,61 +40,61 @@ client.on('message', message => {
  **
 
 ╔[❖════════════❖]╗
-             Prefix = ' * '
+             Prefix = ' . '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
              Admin Commands
 ╚[❖════════════❖]╝
 
- ❖ *kick <mention > ➾ kick member from server
+ ❖ .kick <mention > ➾ kick member from server
 
- ❖ *clear ➾ clear chat ( not ready yet fixing)
+ ❖ .clear ➾ clear chat ( not ready yet fixing)
  
- ❖ *mute < mention > ➾ mute member
+ ❖ .mute < mention > ➾ mute member
 
- ❖ *unmute <mention> ➾ unmute member
+ ❖ .unmute <mention> ➾ unmute member
 
- ❖ *ct <name> ➾ create channel
+ ❖ .ct <name> ➾ create channel
 
- ❖ *cv <name> create voice channel
+ ❖ .cv <name> create voice channel
   
- ❖ *bc <message> ➾ message all members in server
+ ❖ .bc <message> ➾ message all members in server
 
 
 ╔[❖════════════❖]╗
             General  Commands
 ╚[❖════════════❖]╝
 
-❖ *roll <number> ➾ role 
+❖ .roll <number> ➾ role 
 
-❖ *date ➾ see date
+❖ .date ➾ see date
 
-❖ *member ➾ members info
+❖ .member ➾ members info
 
-❖ *ser-av ➾ server avatar
+❖ .ser-av ➾ server avatar
 
-❖ *uptime ➾ to see uptime
+❖ .uptime ➾ to see uptime
 
-❖ *invs ➾ server invite link
+❖ .invs ➾ server invite link
 
-❖ *own ➾ bot owner
+❖ .own ➾ bot owner
 
-❖ *id ➾ your id
+❖ .id ➾ your id
 
-❖ *avatar ➾ your avatar account
+❖ .avatar ➾ your avatar account
 
-❖ *help-en ➾ help by arabic
+❖ .help-en ➾ help by arabic
 
-❖ *help-en ➾ help by english
+❖ .help ➾ help by english
 
-❖ *ping ➾ to see ping
+❖ .ping ➾ to see ping
 
-❖ *bot ➾ bot informations 
+❖ .bot ➾ bot informations 
 
-❖ *server ➾ server informations 
+❖ .server ➾ server informations 
 
-❖ *invite ➾ bot invite link
+❖ .invite ➾ bot invite link
 
 ╔[❖════════════❖]╗
                     Welcome
