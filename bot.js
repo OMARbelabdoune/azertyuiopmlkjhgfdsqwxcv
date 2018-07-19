@@ -84,9 +84,7 @@ client.on('message', message => {
 
 ❖ .avatar ➾ your avatar account
 
-❖ .help-en ➾ help by arabic
-
-❖ .help ➾ help by english
+❖ .help ➾ help by arabic
 
 ❖ .ping ➾ to see ping
 
