@@ -27,5 +27,13 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
+client.on('message' , message => {
+    if(message.content.includes === 'الكلام') {
+    message.channel.send(`الرد`);
+    }
+     });
+
+
+
 
 client.login(process.env.BOT_TOKEN);
