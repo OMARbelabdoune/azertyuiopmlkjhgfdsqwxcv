@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "." ;
+const prefix = "*" ;
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -29,7 +29,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 });
 client.on('message', message => {
     if (message.author.bot) return;
-     if (message.content === prefix + "help-en") {
+     if (message.content === prefix + "help") {
 		 message.channel.send('**The Message Was Sent On Private**');
             
 	
@@ -40,59 +40,61 @@ client.on('message', message => {
  **
 
 ╔[❖════════════❖]╗
-             Prefix = ' . '
+             Prefix = ' * '
 ╚[❖════════════❖]╝
 
 ╔[❖════════════❖]╗
              Admin Commands
 ╚[❖════════════❖]╝
 
- ❖ .kick <mention > ➾ kick member from server
+ ❖ *kick <mention > ➾ kick member from server
 
- ❖ .clear ➾ clear chat ( not ready yet fixing)
+ ❖ *clear ➾ clear chat ( not ready yet fixing)
  
- ❖ .mute < mention > ➾ mute member
+ ❖ *mute < mention > ➾ mute member
 
- ❖ .unmute <mention> ➾ unmute member
+ ❖ *unmute <mention> ➾ unmute member
 
- ❖ .ct <name> ➾ create channel
+ ❖ *ct <name> ➾ create channel
 
- ❖ .cv <name> create voice channel
+ ❖ *cv <name> create voice channel
   
- ❖ .bc <message> ➾ message all members in server
+ ❖ *bc <message> ➾ message all members in server
 
 
 ╔[❖════════════❖]╗
             General  Commands
 ╚[❖════════════❖]╝
 
-❖ .roll <number> ➾ role 
+❖ *roll <number> ➾ role 
 
-❖ .date ➾ see date
+❖ *date ➾ see date
 
-❖ .member ➾ members info
+❖ *member ➾ members info
 
-❖ .ser-av ➾ server avatar
+❖ *ser-av ➾ server avatar
 
-❖ .uptime ➾ to see uptime
+❖ *uptime ➾ to see uptime
 
-❖ .invs ➾ server invite link
+❖ *invs ➾ server invite link
 
-❖ .own ➾ bot owner
+❖ *own ➾ bot owner
 
-❖ .id ➾ your id
+❖ *id ➾ your id
 
-❖ .avatar ➾ your avatar account
+❖ *avatar ➾ your avatar account
 
-❖ .help ➾ help by arabic
+❖ *help-en ➾ help by arabic
 
-❖ .ping ➾ to see ping
+❖ *help-en ➾ help by english
 
-❖ .bot ➾ bot informations 
+❖ *ping ➾ to see ping
 
-❖ .server ➾ server informations 
+❖ *bot ➾ bot informations 
 
-❖ .invite ➾ bot invite link
+❖ *server ➾ server informations 
+
+❖ *invite ➾ bot invite link
 
 ╔[❖════════════❖]╗
                     Welcome
@@ -100,12 +102,11 @@ client.on('message', message => {
 
 to enable welcome message do channel name "wlc"
 
-
+=
 
 `);
 
     }
 });
-
 
 client.login(process.env.BOT_TOKEN);
